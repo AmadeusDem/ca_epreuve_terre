@@ -11,5 +11,5 @@ crevette.js
 
  */
 
-let path = process.argv[1];
-console.log(path.split('/')[6]);
+let fileName = process.argv[1].split('/').slice(-1)[0];
+console.log(fileName);
