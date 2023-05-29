@@ -16,11 +16,12 @@ let charArg;
 let codeAsciiChar;
 let alphabet = '';
 
-// We check for the length of the arguments to be sure to have only one argument
+// We check for the length of the arguments to be sure to have only one argument.
 if(process.argv.length === 3) {
   charArg = process.argv[2];
   codeAsciiChar = charArg.charCodeAt();
 
+  // We check that the argument is a letter in lower case,
   if(codeAsciiChar > 96 && codeAsciiChar < 123) {
     for (let i = codeAsciiChar; i < 123; i++) {
       alphabet += String.fromCharCode(i);
