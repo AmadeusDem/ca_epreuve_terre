@@ -19,7 +19,7 @@ if ((isNaN(firstNumber) && isNaN(secondNumber)) || secondNumber === 0) { //
 }
 
 result = Math.floor(firstNumber / secondNumber); // We divide the numbers we got in argument and floor it
-remainder = firstNumber % secondNumber;
+remainder = firstNumber % secondNumber; 
 
 if (result !== 0) {
   console.log("Résultat: " + result);
