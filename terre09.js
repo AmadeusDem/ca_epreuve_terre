@@ -32,7 +32,6 @@ function printError () {
 }
 
 function squareRoot (number) {
-  console.log(number);
   // We can return directly if the number is equal to 0 or 1.
   if (number === 0 || number === 1) {
     return number;
