@@ -33,7 +33,8 @@ if (!isNaN(userInput) && userInput > 1) {
 function primeNumber(number) {
   let prime = true;
   for (let i = 2; i <= Math.floor(squareRoot(number)); i++) {
-    prime = !((number % i) === 0);
+    prime = (number % i) !== 0;
+    if(!prime) break;
   }
   return prime;
 }
